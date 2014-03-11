@@ -1,0 +1,30 @@
+<template name="stripes_list">
+	<div class="stripes_list">
+		{{#each stripes}}
+			{{> stripe}}
+		{{/each}}
+		<a href="" id="add-stripe">+ New strip</a>
+	</div>
+</template>
+
+<template name="stripe">
+	<div class="stripe {{is_selected}}">
+		<h4>{{title}}</h4>
+	</div>
+</template>
+
+
+<template name="current_stripe">
+	<div class="current_stripe">
+		{{#with stripe}}
+			<h4>{{title}}</h4>
+			<div class="frames">
+				{{#each frames}}
+					{{> frame}}
+				{{/each}}
+				<div class="frame new-frame"><a href="" id="add-frame">+ New frame</a></div>
+			</div>
+		{{/with}}
+		{{> html5uploader}}
+	</div>
+</template>
