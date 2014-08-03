@@ -2,7 +2,7 @@
 *, *:before, *:after {
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
-div {
+div, img.background {
 	-webkit-user-drag: none;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -20,29 +20,6 @@ html, body {
 	padding: 0;
 }
 
-.frames_list, .stripes_list {
-	float: left;
-	width: 200px;
-	height: 100%;
-	background-color: #ccc;
-	padding: 10px;
-	text-align: center;
-	cursor: pointer;
-}
-
-.frames_list {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-.stripes_list {
-	
-}
-
-.stripe {
-	border: 2px solid gray;
-	margin: 2px;
-}
 .is_selected {
 	border-color: rgba(82, 168, 236, 0.8);
 	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
@@ -51,24 +28,15 @@ html, body {
 	color: #313F42;
 }
 
-.current_stripe {
-	margin-left: 200px;
-	margin-right: 200px;
-	top: 0;
-	overflow: hidden;
+.drop_zone * {
+	XXXpointer-events: none;
 }
-.current_stripe h4 {
-	width: 100%;
+.drop_zone {
+	border: 2px dashed gray;
 	text-align: center;
+	height: 50px;
+	line-height: 50px;
 }
-
-.frame {
-	width: 300px;
-	height: 300px;
-}
-
-.new-frame {
-	border: 2px dashed #ccc;
-	text-align: center;
-	line-height: 300px;
+.drop_zone-hover {
+	border-color: black;
 }

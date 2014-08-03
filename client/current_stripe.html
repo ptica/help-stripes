@@ -1,0 +1,35 @@
+<template name="current_stripe">
+	<div class="current_stripe">
+		{{#with stripe}}
+			<h1>{{title}}</h1>
+			<div class="frames">
+				{{#each frames}}
+					{{> frame}}
+				{{/each}}
+				<div class="frame new-frame">
+					<a href="" id="add-frame">+ Drag frame here</a>
+					<a href="" id="delete-stripe">x Delete this stripe</a>
+				</div>
+			</div>
+		{{/with}}
+	</div>
+</template>
+
+<template name="frame">
+	<div class="frame {{is_selected}}" style="{{frame_css}}">
+		{{#with image}}
+			<img class="background" style="{{../image_css}}" src="{{this.url}}">
+		{{/with}}
+		<div class="index" style="{{index_css}}">{{this.index}}</div>
+		<div class="arrow_box" style="{{arrow_css}}"></div>
+		{{#each strings}}
+			{{> string}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="string">
+	<div class="string" style="{{string_css}}">
+		{{title}}
+	</div>
+</template>

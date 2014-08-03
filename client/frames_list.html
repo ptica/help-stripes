@@ -1,8 +1,16 @@
 <template name="frames_list">
 	<div class="frames_list">
-		{{#each frame_thumbs}}
-			{{> frame_thumb}}
-		{{/each}}
-		+ Frame
+		{{> drop_zone}}
+		{{> image_list}}
 	</div>
+</template>
+
+<template name="drop_zone">
+	<div class="drop_zone">+ Frame</div>
+</template>
+
+<template name="image_list">
+	{{#each images}}
+		<img class="frame_thumb" src="{{this.url}}" alt="{{_id}}">
+	{{/each}}
 </template>

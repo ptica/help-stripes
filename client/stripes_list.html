@@ -1,30 +1,15 @@
 <template name="stripes_list">
 	<div class="stripes_list">
 		{{#each stripes}}
-			{{> stripe}}
+			{{> stripe_thumb}}
 		{{/each}}
 		<a href="" id="add-stripe">+ New strip</a>
 	</div>
 </template>
 
-<template name="stripe">
-	<div class="stripe {{is_selected}}">
-		<h4>{{title}}</h4>
+<template name="stripe_thumb">
+	<div class="stripe_thumb {{is_selected}}">
+		<h1>{{title}}</h1>
 	</div>
 </template>
 
-
-<template name="current_stripe">
-	<div class="current_stripe">
-		{{#with stripe}}
-			<h4>{{title}}</h4>
-			<div class="frames">
-				{{#each frames}}
-					{{> frame}}
-				{{/each}}
-				<div class="frame new-frame"><a href="" id="add-frame">+ New frame</a></div>
-			</div>
-		{{/with}}
-		{{> html5uploader}}
-	</div>
-</template>

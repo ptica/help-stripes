@@ -1,0 +1,101 @@
+.current_stripe {
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 0 40px;
+	top: 0;
+	overflow: hidden;
+	overflow-x: scroll;
+}
+.current_stripe h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+}
+
+.frame {
+	width: 220px;
+	height: 200px;
+	float: left;
+	margin-bottom: 40px;
+	border: 3px solid #888;
+	border-left: none;
+	overflow: hidden;
+	position: relative;
+}
+.frame:first-child { border-left: 3px solid #888 }
+.frames {
+	min-width:2000px; width: auto !important; width: 2000px;
+	min-height: 200px;
+}
+
+.new-frame {
+	border: 0px dashed #ccc;
+	text-align: center;
+	line-height: 300px;
+}
+
+.current_stripe .index {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	color: white;
+	background: #F47A20;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	font-size: 40px;
+	
+}
+
+.frame img.background {
+	position: relative;
+	top: 0;
+	left: 0;
+	max-width: none;
+}
+
+.arrow_box {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	background: #88b7d5;
+	border: 4px solid #c2e1f5;
+	border-bottom: none;
+	width: 25px;
+	height: 40px;
+}
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 14px;
+	margin-left: -14px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 20px;
+	margin-left: -20px;
+}
+
+.string {
+	position: absolute;
+	border: 1px solid black;
+	bottom: 16px;
+	left: 10px;
+	white-space: nowrap;
+	background-color: #fcfdcd;
+	padding: 0 3px;
+}

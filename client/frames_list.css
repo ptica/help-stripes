@@ -1,0 +1,30 @@
+.frames_list, .stripes_list {
+	float: left;
+	width: 250px;
+	height: 100%;
+	background-color: #ccc;
+	padding: 10px;
+	text-align: center;
+	cursor: default;
+	overflow: scroll;
+}
+
+.stripes_list h1 {
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.frames_list {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.stripe_thumb, .frame_thumb {
+	border: 2px solid gray;
+	margin: 2px;
+	cursor: pointer;
+}
+.frame_thumb {
+	margin-top: 10px;
+}

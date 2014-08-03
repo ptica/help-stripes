@@ -6,7 +6,9 @@
 standard-app-packages
 autopublish
 insecure
-preserve-inputs
 bootboxjs
 npm
+accounts-base
+bootstrap
 collectionFS
+cfs-filesystem

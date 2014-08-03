@@ -2,6 +2,7 @@
   "packages": {
     "bootboxjs": {},
     "npm": {},
+    "accounts-ui-bootstrap-dropdown": {},
     "collectionFS": {}
   }
 }
