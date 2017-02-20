@@ -29,7 +29,7 @@ html, body {
 }
 
 .drop_zone * {
-	XXXpointer-events: none;
+	pointer-events: none;
 }
 .drop_zone {
 	border: 2px dashed gray;
